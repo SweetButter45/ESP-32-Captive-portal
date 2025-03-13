@@ -9,7 +9,7 @@ This project is a Wi-Fi captive portal setup for an ESP32. It creates a fake acc
       `https://dl.espressif.com/dl/package_esp32_index.json`
     * Go to Tools > Board > Boards Manager, search for ESP32, and install it.
 3. Download the Code:
-* Clone or [download the ZIP](https://github.com/SweetButter45/ESP-32-Captive-portal.git) of this repository.
+* Clone or [download the ZIP](https://github.com/SweetButter45/ESP-32-Captive-portal/archive/refs/heads/main.zip) of this repository.
 * Extract the ZIP file if downloaded.
 4. Open the Code:
 * Open `main file.ino` in Arduino IDE.
