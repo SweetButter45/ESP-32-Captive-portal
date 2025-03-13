@@ -58,8 +58,6 @@ This project is a Wi-Fi captive portal setup for an ESP32. It creates a fake acc
 * OLED Display (SSD1306): Used for basic feedback (boot messages, status).
 * LED: The built-in LED will blink 5 times after a password is successfully posted to provide visual feedback.
 
-#Additional Features
-*Captive Portal: The ESP32 acts as a captive portal, where users who connect to the fake AP are redirected to the portal page.
-*Password Storage: Saved passwords are stored in the ESP32's EEPROM for later use.
-*Wi-Fi Connectivity: After a correct password is provided, the ESP32 connects to the real Wi-Fi network and shuts down the fake AP.
+Special Thanks:-
+* [David Kyazze](https://github.com/Rubylinux/ESP32-Captive-Portal)
 
