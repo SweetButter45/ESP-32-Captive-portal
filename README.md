@@ -30,7 +30,7 @@ This project is a Wi-Fi captive portal setup for an ESP32. It creates a fake acc
 * DNS Server to catch all DNS requests while connected to the fake AP.
 
 # Endpoints and Their Purpose
-* / - Index Page:-
+* /Index Page:-
                     Displays the main page of the captive portal with a message telling the user that the router's firmware is out of date and prompting them to enter the Wi-Fi password.
                     Contains a form to enter the Wi-Fi password.
   
