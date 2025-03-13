@@ -2,7 +2,28 @@
 Project Description
 This project is a Wi-Fi captive portal setup for an ESP32. It creates a fake access point (AP) that masquerades as a router to prompt users to input a Wi-Fi password. Upon receiving the correct password, the ESP32 connects to the real Wi-Fi router, stores the valid password in EEPROM, and disconnects the fake AP. The system also allows users to change the SSID (network name) of the ESP32 access point and view or clear the saved Wi-Fi passwords.
 
-The system uses:
+# Installation
+1. Install the Arduino IDE: Download and install the Arduino IDE.
+2. Install ESP32 Support:
+    * Go to File > Preferences and add the following URL to Additional Boards Manager URLs:
+      `https://dl.espressif.com/dl/package_esp32_index.json`
+    * Go to Tools > Board > Boards Manager, search for ESP32, and install it.
+3. Download the Code:
+* Clone or [download the ZIP](https://github.com/SweetButter45/ESP-32-Captive-portal.git) of this repository.
+* Extract the ZIP file if downloaded.
+4. Open the Code:
+* Open `main file.ino` in Arduino IDE.
+5. Select ESP32 Board:
+* Go to Tools > Board, and select the correct ESP32 model (e.g., ESP32 Dev Module).
+6. Install Libraries:
+  * Go to Sketch > Include Library > Manage Libraries.
+  * Search and install the following libraries:
+  * Adafruit SSD1306
+  * Adafruit GFX and other required libraries from the Library Manager.
+7. Upload to ESP32:
+  * Upload the code to your ESP32 board.
+
+# The system uses:
 
 * Adafruit SSD1306 OLED for display feedback.
 * Web Server (ESP32 WebServer library) to serve HTML pages.
@@ -32,3 +53,14 @@ The system uses:
 * /postSSID - Submit New SSID
                     This endpoint is triggered when the user submits the new SSID.
                     It updates the SSID in EEPROM and restarts the ESP32 to apply the changes.
+
+# Hardware Setup
+* ESP32: Acts as both the Wi-Fi access point (AP) and connects to the real router.
+* OLED Display (SSD1306): Used for basic feedback (boot messages, status).
+* LED: The built-in LED will blink 5 times after a password is successfully posted to provide visual feedback.
+
+#Additional Features
+*Captive Portal: The ESP32 acts as a captive portal, where users who connect to the fake AP are redirected to the portal page.
+*Password Storage: Saved passwords are stored in the ESP32's EEPROM for later use.
+*Wi-Fi Connectivity: After a correct password is provided, the ESP32 connects to the real Wi-Fi network and shuts down the fake AP.
+
