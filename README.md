@@ -58,6 +58,6 @@ This project is a Wi-Fi captive portal setup for an ESP32. It creates a fake acc
 * OLED Display (SSD1306): Used for basic feedback (boot messages, status).
 * LED: The built-in LED will blink 5 times after a password is successfully posted to provide visual feedback.
 
-# Special Thanks:-
+# Special Thanks
 * [David Kyazze](https://github.com/dkyazzentwatwa/ESP32-Captive-Portal)
 
